@@ -11,7 +11,7 @@ const featureStyling = {
 }
 function NavBar() {
   return(
-    <div>
+    <div className="navbar">
       <NavLink
       to='/'
       style={featureStyling}>Home</NavLink>

@@ -6,6 +6,7 @@ function Movies() {
   const getMovies = movies.map((movie)=>(
     <div key={movie.title}>
       {movie.title}
+      {movie.time}
       <ul>
       {movie.genres.map((genre)=>(
           <li key={genre}>{genre}</li>
@@ -16,7 +17,7 @@ function Movies() {
 
 
   return (<div>
-    <h1>Movies page</h1>
+    <h1>Movies Page</h1>
     {getMovies}
 
   </div>);
